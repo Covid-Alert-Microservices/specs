@@ -48,5 +48,9 @@ Le groupe que nous avons constitué pour la réalisation de ce projet est le sui
 - Florent Hugouvieux
 - Keven Dvorianoff
 
-**Florent Hugouvieux** aura pour responsabilité de s'occuper de la partie CI/CD du projet, le mettre en place l'environnement de production ainsi que de s'assurer que l'environnement de développement amène le moins de frictions pour le reste de l'équipe ; permettant ainsi un maximum de productivité chez ces derniers. De plus, il s'assurera de la bonne couverture du code par les tests pour chaque microservice.
+**Axel Duval** : Geolocation
+
+**Florent Hugouvieux** aura pour responsabilité de s'occuper de la partie CI/CD du projet, de mettre en place l'environnement de production ainsi que de s'assurer que l'environnement de développement amène le moins de frictions pour le reste de l'équipe ; permettant ainsi un maximum de productivité chez ces derniers. De plus, il s'assurera de la bonne couverture du code par les tests pour chaque microservice. Enfin, il s'ocupera des microservices en rapport avec les nouvelles liées au Covid.
+
+**Keven Dvorianoff** : Tests covids et vaccination
 
