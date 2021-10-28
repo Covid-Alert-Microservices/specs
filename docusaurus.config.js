@@ -9,7 +9,7 @@ const config = {
   title: "Covid Alert Specs",
   tagline: "Regroupe les spécifications du projet",
   url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  baseUrl: "/specs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
