@@ -7,6 +7,7 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./HomepageFeatures.module.css";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 type FeatureItem = {
   title: string;
@@ -17,7 +18,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: "Automatisé",
-    image: "/img/undraw_docusaurus_mountain.svg",
+    image: useBaseUrl("/img/undraw_docusaurus_mountain.svg"),
     description: (
       <>
         Le déploiement de nos microservices sont automatiques afin de simplifier
@@ -27,12 +28,12 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "API explicite",
-    image: "/img/undraw_docusaurus_tree.svg",
+    image: useBaseUrl("/img/undraw_docusaurus_tree.svg"),
     description: <>L'API de chacun de nos microservices est documentée.</>,
   },
   {
     title: "Complétement documenté",
-    image: "/img/undraw_docusaurus_react.svg",
+    image: useBaseUrl("/img/undraw_docusaurus_react.svg"),
     description: (
       <>
         Les interactions entre nos microservices font toutes l'objet d'un
