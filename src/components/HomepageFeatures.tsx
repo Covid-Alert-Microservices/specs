@@ -7,7 +7,7 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./HomepageFeatures.module.css";
-import useBaseUrl from "@docusaurus/useBaseUrl";
+import useBaseUrl from "@docusaurus/useBaseUrl"
 
 type FeatureItem = {
   title: string;
@@ -18,7 +18,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: "Automatisé",
-    image: useBaseUrl("/img/undraw_docusaurus_mountain.svg"),
+    image: "/img/undraw_docusaurus_mountain.svg",
     description: (
       <>
         Le déploiement de nos microservices sont automatiques afin de simplifier
@@ -28,12 +28,12 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "API explicite",
-    image: useBaseUrl("/img/undraw_docusaurus_tree.svg"),
+    image: "/img/undraw_docusaurus_tree.svg",
     description: <>L'API de chacun de nos microservices est documentée.</>,
   },
   {
     title: "Complétement documenté",
-    image: useBaseUrl("/img/undraw_docusaurus_react.svg"),
+    image: "/img/undraw_docusaurus_react.svg",
     description: (
       <>
         Les interactions entre nos microservices font toutes l'objet d'un
@@ -47,7 +47,7 @@ function Feature({ title, image, description }: FeatureItem) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <img className={styles.featureSvg} alt={title} src={image} />
+        <img className={styles.featureSvg} alt={title} src={useBaseUrl(image)} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
