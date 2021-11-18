@@ -24,12 +24,12 @@ sequenceDiagram
     activate Kafka
     Agent ->> Controller: POST /geo
     activate Controller
-    Controller ->> PostgresDB: insert location
+    Controller ->> PostgresDB: insert geolocation
     activate PostgresDB
-    PostgresDB ->> Controller: location
+    PostgresDB ->> Controller: geolocation
     deactivate PostgresDB
-    Controller ->> Kafka : location_created location
-    Controller ->> Agent: location
+    Controller ->> Kafka : geolocation_created
+    Controller ->> Agent: geolocation
     deactivate Controller
 ```
 
@@ -48,14 +48,14 @@ Quand une localisation est enregistrée il faut mêtre à jour le graphe de prox
 sequenceDiagram
     autonumber
     activate Kafka
-    Kafka ->> Listener: location_created {location}
+    Kafka ->> Listener: geolocation_created
     activate Listener
-    Listener ->> PostgresDB: get potential infected locations
+    Listener ->> PostgresDB: get potential infected geolocations
     activate PostgresDB
-    PostgresDB ->> Listener: locations
+    PostgresDB ->> Listener: geolocations
     deactivate PostgresDB
-    Listener ->> Listener: compute location distances
-    Listener ->> Listener: keep only close locations
+    Listener ->> Listener: compute geolocation distances
+    Listener ->> Listener: keep only close geolocations
     Listener ->> Neo4j: create link between users
     activate Neo4j
     Neo4j ->> Listener: transaction status
@@ -79,13 +79,13 @@ Lors d'un cas positif confirmé par un test, un listener est réveillé pour s'o
 sequenceDiagram
     autonumber
     activate Kafka
-    Kafka ->> Listener: user_positive {user, timestamp}
+    Kafka ->> Listener: user_positive
     activate Listener
     Listener ->> Neo4j: get contact users
     activate Neo4j
     Neo4j ->> Listener: contact users
     deactivate Neo4j
-    Listener ->> Kafka : send_alert {user}
+    Listener ->> Kafka : send_alert
     deactivate Listener
     
 ```
