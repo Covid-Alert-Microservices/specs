@@ -2,6 +2,8 @@
 title: Alertes
 ---
 
+[![Build](https://github.com/Covid-Alert-Microservices/alerts/actions/workflows/build.yaml/badge.svg)](https://github.com/Covid-Alert-Microservices/alerts/actions/workflows/build.yaml)
+
 Le système d'alertes permet de notifier les potentiels cas contact au travers d'une simple API REST qui sera interrogée par un client frontend. Une alerte à une durée de validité de 7 jours (temps incubation et période contagieuse), après ce délai elle n'est plus considérée comme valide. La supression des alertes inactives se fait à l'aide de CronTab.
 
 ## Nouvelle alerte

@@ -2,6 +2,8 @@
 title: Géolocalisation
 ---
 
+[![Build](https://github.com/Covid-Alert-Microservices/compass/actions/workflows/build.yaml/badge.svg)](https://github.com/Covid-Alert-Microservices/compass/actions/workflows/build.yaml)
+
 Le système de geolocalisation permet de tracer et retrouver efficacement les personnes contacts en présence d'un cas confirmé positif. Afin d'optimiser le traitement des requètes d'analyse nous avons opté pour deux bases de données :
 - Une base de donnée [Postgres](https://www.postgresql.org/) pour persister les localisations (anonymisées) des utilisateurs
 - Une base de donnée graphe [Neo4j](https://neo4j.com/) qui maintiendra le graphe de proximité des utilisateurs

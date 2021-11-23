@@ -23,7 +23,7 @@ flowchart LR
 
     subgraph d[Données santé]
         direction BT
-        TestPostgres[(Postgres)] <-.-> Tests[Tests Covid Microservice]
+        TestPostgres[(Postgres)] <-..-> Tests[Tests Covid Microservice]
         VaccinPostgres[(Postgres)] <-.-> Vaccin[Vaccins Microservice]
     end
 
@@ -36,6 +36,7 @@ flowchart LR
         direction BT
         Alert[Alertes Microservice]
         GeoPostgres[(Postgres)] <-.-> Geo[Geolocalisation Microservice] 
+        GeoNeo4j[(Neo4j)] <-.-> Geo
     end
 
     KK{{Kafka}}
