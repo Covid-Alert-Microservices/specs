@@ -48,9 +48,9 @@ Le groupe que nous avons constitué pour la réalisation de ce projet est le sui
 - Florent Hugouvieux
 - Keven Dvorianoff
 
-**Axel Duval** : aura pour responsabilité de s'occuper de la gestion de la localisation sur frontent comme sur le backend. Il devra également trouver des moyens pour optimiser le traitement des requètes d'analyse. De plus, il s'occupera de l'UX/UI des maquettes du frontend. Pour finir, il s'occupera des divers graphiques relatifs au covid en France présents sur le frontend.
+**Axel Duval** : aura pour responsabilité de s'occuper de la gestion de la localisation sur frontend comme sur le backend. Il devra également trouver des moyens pour optimiser le traitement des requêtes d'analyse. De plus, il s'occupera de l'UX/UI des maquettes du frontend. Pour finir, il s'occupera des divers graphiques relatifs au covid en France présents sur le frontend.
 
-**Florent Hugouvieux** aura pour responsabilité de s'occuper de la partie CI/CD du projet, de mettre en place l'environnement de production ainsi que de s'assurer que l'environnement de développement amène le moins de frictions pour le reste de l'équipe ; permettant ainsi un maximum de productivité chez ces derniers. De plus, il s'assurera de la bonne couverture du code par les tests pour chaque microservice. Enfin, il s'ocupera des microservices en rapport avec les nouvelles liées au Covid.
+**Florent Hugouvieux** aura pour responsabilité de s'occuper de la partie CI/CD du projet, de mettre en place l'environnement de production ainsi que de s'assurer que l'environnement de développement amène le moins de frictions pour le reste de l'équipe ; permettant ainsi un maximum de productivité chez ces derniers. De plus, il s'assurera de la bonne couverture du code par les tests pour chaque microservice. Enfin, il s'occupera des microservices en rapport avec les nouvelles liées au Covid.
 
-**Keven Dvorianoff** : Tests covids et vaccination
+**Keven Dvorianoff** se concentrera sur les microservices liés aux vaccins et aux tests Covid. Il communiquera au service de géolocalisation lorsqu’un utilisateur rentrera un test Covid positif afin qu’on puisse alerter les utilisateurs ayant été en contact celui-ci.
 
