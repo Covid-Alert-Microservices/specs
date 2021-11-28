@@ -17,10 +17,6 @@ flowchart LR
         PK[(Postgres)] <-.-> K[Keycloack] 
     end
 
-    subgraph Proxy
-        nginx[[nginx]]
-    end
-
     subgraph d[Données santé]
         direction BT
         TestPostgres[(Postgres)] <-..-> Tests[Tests Covid Microservice]
@@ -42,11 +38,7 @@ flowchart LR
     KK{{Kafka}}
     
     Authentication <----> a
-    Authentication <----> d
-
-    Proxy <--> a
-    Proxy <--> d
-    Proxy <--> n
+    Authentication <---> d
     
     Tests --> KK
     Geo --> KK
