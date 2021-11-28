@@ -16,7 +16,7 @@ Les fonctionnalités attendues sont les suivantes :
 - Enregistrer la position des utilisateur sur une durée de 1 mois
 - Pouvoir entrer son état vaccinal
 - Pouvoir entrer les résultat de ses tests Covid
-- Lors d'un cas positif détecté, avertir toutes les personnes aillant récemment croisé ce dernier
+- Lors d'un cas positif détecté, avertir toutes les personnes ayant récemment croisé ce dernier
 - Fournir des nouvelles concernant le Covid aux utilisateurs
 
 ### Contraintes techniques
